@@ -1,12 +1,5 @@
-<html>
-    <head>
-        {% if title %}
-        <title>{{ title }} - Presentations</title>
-        {% else %}
-        <title>Welcome to webdog's Presentations site!</title>
-        {% endif %}
-    </head>
-    <body>
-        <h1>Hello!</h1>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+<b>Welcome to the Presentations site!</b>
+{% endblock %}
