@@ -3,13 +3,10 @@
   <body>
     <div class="reveal">
       <div class="slides">
-      {% block content %}
         {{ html|safe }}
-      {% endblock %}
       </div>
     </div>
   <!-- Keep these lines at the bottom of the document -->
-  <!--{% block revealsrc %}{% endblock %}-->
   {% include "slideloaders.html" %}
   </body>
 </html>
