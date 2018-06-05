@@ -12,6 +12,30 @@
 
 
 // Include theme-specific fonts
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file+'.eot');
+    src: url($font-file+'.eot?#iefix') format('embedded-opentype'),
+  url($font-file+'.woff') format('woff'),
+  url($font-file+'.ttf') format('truetype'),
+  url($font-file+'.svg#aller') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font('TitilliumWeb', '/static/lib/font/titillium-web/TitilliumWeb-Regular');
+@include font('TitilliumWeb-Black', '/static/lib/font/titillium-web/TitilliumWeb-Black');
+@include font('TitilliumWeb-Bold', '/static/lib/font/titillium-web/TitilliumWeb-Bold');
+@include font('TitilliumWeb-BoldItalic', '/static/lib/font/titillium-web/TitilliumWeb-BoldItalic');
+@include font('TitilliumWeb-ExtraLight', '/static/lib/font/titillium-web/TitilliumWeb-ExtraLight');
+@include font('TitilliumWeb-Italic', '/static/lib/font/titillium-web/TitilliumWeb-Italic');
+@include font('TitilliumWeb-Light', '/static/lib/font/titillium-web/TitilliumWeb-Light');
+@include font('TitilliumWeb-LightItalic', '/static/lib/font/titillium-web/TitilliumWeb-LightItalic');
+@include font('TitilliumWeb-SemiBold', '/static/lib/font/titillium-web/TitilliumWeb-SemiBold');
+
+
 @import url(/static/lib/font/github/github.css);
 
 // Override theme settings (see ../template/settings.scss)
@@ -21,8 +45,8 @@ $mainColor: #FFF;
 $headingColor: #FFF;
 
 $mainFontSize: 42px;
-$mainFont: 'Titillium Web', sans-serif;
-$headingFont: 'Titillium Web', Helvetica, sans-serif;
+$mainFont: 'TitilliumWeb', sans-serif;
+$headingFont: 'TitilliumWeb-Bold', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -48,3 +72,13 @@ section.has-dark-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal .footer {
+  fill: #FFFFFF;
+}
+
+#footer-left {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+    }
