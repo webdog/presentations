@@ -84,58 +84,72 @@ section.has-dark-background {
     }
 
 //Custom formatting for each slide
-#title_and_subtitle {
+.title_and_subtitle {
+  h1 {
+    font-size: 220pt;
+  }
+}
+
+.title {
+  h1 {
+    font-size: 220pt;
+  }
+}
+
+.invertocat{
+  horiz-align: center;
+  vertical-align: center;
+}
+
+.wordmark {
+  horiz-align: center;
+  vertical-align: center;
+}
+
+.chapter_title_and_subtitle {
+  #chapter {
+    font-size: 10pt;
+    text-align: center;
+  }
+  #subtitle {
+    font-size: 10pt;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+.chapter_title {
 
 }
 
-#title {
+.bottom_title {
 
 }
 
-#invertocat {
+.blank_with_logo {
 
 }
 
-#wordmark {
+.blank {
 
 }
 
-#chapter_title_and_subtitle {
+.title_with_bullets {
 
 }
 
-#chapter_tile {
+.two_column {
 
 }
 
-#bottom_title {
+.title_with_subtitle {
 
 }
 
-#blank_with_logo {
+.title_medium {
 
 }
 
-#blank {
-
-}
-
-#title_with_bullets {
-
-}
-
-#two_column {
-
-}
-
-#title_with_subtitle {
-
-}
-
-#title_medium {
-
-}
-
-#bullets {
+.bullets {
 
 }
