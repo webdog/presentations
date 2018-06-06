@@ -385,3 +385,31 @@ body {
   bottom: 2%;
   left: 2%;
 }
+
+#title_and_subtitle h1 {
+  font-size: 220pt;
+}
+
+#title h1 {
+  font-size: 220pt;
+}
+
+#invertocat {
+  horiz-align: center;
+  vertical-align: center;
+}
+
+#wordmark {
+  horiz-align: center;
+  vertical-align: center;
+}
+
+.chapter_title_and_subtitle #chapter {
+  font-size: 10pt;
+  text-align: center;
+}
+.chapter_title_and_subtitle #subtitle {
+  font-size: 10pt;
+  font-weight: normal;
+  text-align: center;
+}
